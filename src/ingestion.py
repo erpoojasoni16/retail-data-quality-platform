@@ -22,7 +22,8 @@ def discover_csv_files(raw_folder: Path) -> list(Path):
     csv_files=list(raw_folder.glob("*.csv"))
     return csv_files
     
-
+def read_csv_file(file_path: Path) -> pd.DataFrame:
+    return pd.read_csv(file_path)
     
     
     
